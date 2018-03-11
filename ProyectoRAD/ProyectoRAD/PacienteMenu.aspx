@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MenuMaster.master" AutoEventWireup="true" CodeFile="PacienteMenu.aspx.cs" Inherits="PacienteMenu" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PrincipalMaster.master" AutoEventWireup="true" CodeFile="PacienteMenu.aspx.cs" Inherits="PacienteMenu" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style type="text/css">
@@ -10,6 +10,7 @@
         .auto-style3 {
             width: 500px;
             background-image: url('Images/opacity.png');
+            height: 362px;
         }
         .auto-style4 {
             color: #FFFFFF;
@@ -36,32 +37,32 @@
                     </tr>
                     <tr>
                         <td class="auto-style5">
-                            <asp:Button ID="Button1" runat="server" Text="Citas" />
+                            <asp:Button ID="btnCitas" runat="server" Text="Citas"/>
                         </td>
                     </tr>
                     <tr>
                         <td class="auto-style5">
-                            <asp:Button ID="Button2" runat="server" Text="Datos Familiares" />
+                            <asp:Button ID="btnDatos" runat="server" Text="Datos Familiares" />
                         </td>
                     </tr>
                     <tr>
                         <td class="auto-style5">
-                            <asp:Button ID="Button3" runat="server" Text="Medicinas" />
+                            <asp:Button ID="btnMedicinas" runat="server" Text="Medicinas" />
                         </td>
                     </tr>
                     <tr>
                         <td class="auto-style5">
-                            <asp:Button ID="Button4" runat="server" Text="Operaciones" />
+                            <asp:Button ID="btnOperaciones" runat="server" Text="Operaciones" />
                         </td>
                     </tr>
                     <tr>
                         <td class="auto-style5">
-                            <asp:Button ID="Button5" runat="server" Text="Padecimientos" />
+                            <asp:Button ID="btnPadecimientos" runat="server" Text="Padecimientos" />
                         </td>
                     </tr>
                     <tr>
                         <td class="auto-style5">
-                            <asp:Button ID="Button6" runat="server" Text="Cuentas" />
+                            <asp:Button ID="btnCuentas" runat="server" Text="Cuentas" />
                         </td>
                     </tr>
                     <tr>

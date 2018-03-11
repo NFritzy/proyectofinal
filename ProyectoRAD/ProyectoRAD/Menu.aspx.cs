@@ -12,30 +12,31 @@ public partial class Menu : System.Web.UI.Page
 
     }
 
-
-    protected void btnInfo_Click(object sender, EventArgs e)
+    protected void ddlMenu_SelectedIndexChanged(object sender, EventArgs e)
     {
-        Response.Redirect("InfoGeneral.aspx");
+        if(ddlMenu.SelectedValue == "1")
+        {
+            Response.Redirect("BuscarPaciente.aspx");
+        }
+        else if(ddlMenu.SelectedValue == "2")
+        {
+            Response.Redirect("PerfilFuncionario.aspx");
+        }
+        else if(ddlMenu.SelectedValue == "3")
+        {
+            Response.Redirect("InfoGeneral.aspx");
+        }
+        else if(ddlMenu.SelectedValue == "4")
+        {
+            Response.Redirect("Contactos.aspx");
+        }
+        else if(ddlMenu.SelectedValue == "5")
+        {
+            Response.Redirect("Login.aspx");
+        }
+        else if(ddlMenu.SelectedValue == "6")
+        {
+            Environment.Exit(0);
+        }
     }
-
-    protected void btnPaciente_Click(object sender, EventArgs e)
-    {
-        Response.Redirect("Pacientes.aspx");
-    }
-
-    protected void btnPerfil_Click(object sender, EventArgs e)
-    {
-        Response.Redirect("PerfilFuncionario.aspx");
-    }
-
-    protected void btnContactos_Click(object sender, EventArgs e)
-    {
-        Response.Redirect("Contactos.aspx");
-    }
-
-    protected void btnSalir_Click(object sender, EventArgs e)
-    {
-        Response.Redirect("Login.aspx");
-    }
-
 }

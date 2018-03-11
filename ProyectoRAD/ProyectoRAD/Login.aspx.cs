@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -12,37 +13,45 @@ public partial class _Default : System.Web.UI.Page
         ListaUsuario.listaUsuario.Add(new Usuario("abc", "abc", "abc"));
     }
 
-    protected void btnIngresar_Click(object sender, EventArgs e)
+    public string validaUsuario(string usuario, string contra)
     {
-        Usuario usuarioPrueba = new Usuario(txtUsuario.Text, txtContra.Text);
+        Usuario usuarioPrueba = new Usuario(usuario, contra);
 
-        if(ListaUsuario.listaUsuario.Count == 0)
+        if (ListaUsuario.listaUsuario.Count == 0)
         {
-            lblOutput.Text = "No existen usuarios.";
+            return "No existen usuarios.";
         }
 
         for (int i = 0; i < ListaUsuario.listaUsuario.Count; i++)
         {
-            if(usuarioPrueba.GetUsuario() == ListaUsuario.listaUsuario.ElementAt(i).GetUsuario())
+            if (usuarioPrueba.GetUsuario() == ListaUsuario.listaUsuario.ElementAt(i).GetUsuario())
             {
-                if(usuarioPrueba.GetContra() == ListaUsuario.listaUsuario.ElementAt(i).GetContra())
+                if (usuarioPrueba.GetContra() == ListaUsuario.listaUsuario.ElementAt(i).GetContra())
                 {
                     usuarioPrueba = ListaUsuario.listaUsuario.ElementAt(i);
-                    ListaUsuario.temp = usuarioPrueba;
+                    Session["usuario"] = usuarioPrueba.GetUsuario();
                     Response.Redirect("Menu.aspx");
                 }
                 else
                 {
-                    lblOutput.Text = "Contraseña incorrecta.";
+                    return "Contraseña incorrecta.";
                 }
             }
             else
             {
-                lblOutput.Text = "Usuario incorrecto.";
+                return "Usuario incorrecto.";
             }
 
-            lblOutput.Text = "No existen usuarios.";
+            return "No existen usuarios.";
         }
+
+        return "";
+
+    }
+
+    protected void btnIngresar_Click(object sender, EventArgs e)
+    {
+        lblOutput.Text = validaUsuario(txtUsuario.Text, txtContra.Text);
     }
 
     protected void btnCrear_Click(object sender, EventArgs e)

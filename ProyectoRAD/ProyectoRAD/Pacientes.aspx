@@ -62,7 +62,7 @@
                             <asp:Label ID="Label2" runat="server" CssClass="auto-style9" Text="Nombre"></asp:Label>
                         </td>
                         <td>
-                            <asp:TextBox ID="TextBox1" runat="server" Height="16px"></asp:TextBox>
+                            <asp:TextBox ID="txtNombre" runat="server" Height="16px"></asp:TextBox>
                         </td>
                     </tr>
                     <tr>
@@ -70,14 +70,14 @@
                             <asp:Label ID="Label3" runat="server" CssClass="auto-style9" Text="Apellido"></asp:Label>
                         </td>
                         <td>
-                            <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtApellido" runat="server"></asp:TextBox>
                         </td>
                     </tr>
                     <tr>
                         <td class="auto-style14">
                             Cedula</td>
                         <td>
-                            <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtCedula" runat="server"></asp:TextBox>
                         </td>
                     </tr>
                     <tr>
@@ -85,7 +85,7 @@
                             <asp:Label ID="Label4" runat="server" CssClass="auto-style9" Text="Numero de telefono"></asp:Label>
                         </td>
                         <td>
-                            <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtTel" runat="server"></asp:TextBox>
                         </td>
                     </tr>
                     <tr>
@@ -93,7 +93,7 @@
                             <asp:Label ID="Label5" runat="server" CssClass="auto-style9" Text="Dirección"></asp:Label>
                         </td>
                         <td>
-                            <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtDireccion" runat="server"></asp:TextBox>
                         </td>
                     </tr>
                     <tr>
@@ -101,12 +101,12 @@
                             <asp:Label ID="Label6" runat="server" CssClass="auto-style9" Text="Correo"></asp:Label>
                         </td>
                         <td>
-                            <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtCorreo" runat="server"></asp:TextBox>
                         </td>
                     </tr>
                     <tr>
                         <td class="auto-style7" colspan="2">
-                            <asp:Button ID="Button1" runat="server" Text="Crear" />
+                            <asp:Button ID="btnCrear" runat="server" Text="Crear" OnClick="btnCrear_Click"/>
                         </td>
                     </tr>
                     <tr>

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MenuMaster.master" AutoEventWireup="true" CodeFile="Menu.aspx.cs" Inherits="Menu" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PrincipalMaster.master" AutoEventWireup="true" CodeFile="Menu.aspx.cs" Inherits="Menu" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style type="text/css">
@@ -38,37 +38,20 @@
                     </tr>
                     <tr>
                         <td class="auto-style9">
-                            <asp:Button ID="Button1" runat="server" Text="Paciente" />
+                            <asp:DropDownList ID="ddlMenu" runat="server" AutoPostBack="True" Width="259px" OnSelectedIndexChanged="ddlMenu_SelectedIndexChanged">
+                                <asp:ListItem>Seleccione una opción</asp:ListItem>
+                                <asp:ListItem Value="1">Paciente</asp:ListItem>
+                                <asp:ListItem Value="2">Perfil funcionario</asp:ListItem>
+                                <asp:ListItem Value="3">Información general</asp:ListItem>
+                                <asp:ListItem Value="4">Contactos</asp:ListItem>
+                                <asp:ListItem Value="5">Volver</asp:ListItem>
+                                <asp:ListItem Value="6">Cerrar sesión</asp:ListItem>
+                            </asp:DropDownList>
                         </td>
                     </tr>
                     <tr>
                         <td class="auto-style9">
-                            <asp:Button ID="Button2" runat="server" Text="Perfil funcionario" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style9">
-                            <asp:Button ID="Button3" runat="server" Text="Información general" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style9">
-                            <asp:Button ID="Button4" runat="server" Text="Contactos" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style9">
-                            <asp:Button ID="Button5" runat="server" Text="Cerrar sesión" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style9">
-                            <asp:Button ID="Button6" runat="server" Text="Atras" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style9">
-                            <asp:Label ID="Label2" runat="server" ForeColor="Red"></asp:Label>
+                            <asp:Label ID="lblOutput" runat="server" ForeColor="Red"></asp:Label>
                         </td>
                     </tr>
                 </table>

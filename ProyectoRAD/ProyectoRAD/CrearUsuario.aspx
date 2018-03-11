@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MenuMaster.master" AutoEventWireup="true" CodeFile="CrearUsuario.aspx.cs" Inherits="CrearUsuario" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PrincipalMaster.master" AutoEventWireup="true" CodeFile="CrearUsuario.aspx.cs" Inherits="CrearUsuario" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style type="text/css">
@@ -8,21 +8,18 @@
             background-image: url('Images/bear2.jpg');
         }
         .auto-style3 {
-            text-align: center;
             font-size: x-large;
             font-weight: bold;
             color: #FFFFFF;
         }
         .auto-style7 {
             width: 302px;
-            text-align: left;
-        }
+            }
         .auto-style6 {
             text-align: left;
         }
         .auto-style8 {
             width: 302px;
-            text-align: center;
             height: 30px;
             color: #FFFFFF;
         }
@@ -31,17 +28,16 @@
             height: 30px;
         }
         .auto-style4 {
-            text-align: center;
             height: 33px;
+            text-align: center;
         }
         .auto-style2 {
             text-align: center;
         }
         .auto-style11 {
-            width: 302px;
-            text-align: center;
-            color: #FFFFFF;
-        }
+        width: 302px;
+        color: #FFFFFF;
+    }
         .auto-style12 {
         width: 580px;
         height: 441px;
@@ -52,17 +48,17 @@
         </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <table class="auto-style10" align="center">
+    <table align="center"; class="auto-style10">
         <tr>
             <td class="auto-style13">
-    <table align="left" class="auto-style12" style="font-family: Elephant; background-color: none;">
+    <table align="center"; class="auto-style12" style="font-family: Elephant; background-color: none;">
         <tbody class="auto-style6">
         <tr>
             <td class="auto-style3" colspan="2" style="font-family: Elephant; ">Creación de funcionario</td>
         </tr>
         <tr>
         <td class="auto-style7" style="font-family: 'Yu Gothic'">&nbsp;</td>
-        <td class="auto-style6" style="font-family: 'Yu Gothic'">
+        <td style="font-family: 'Yu Gothic'">
             &nbsp;</td>
         </tr>
         <tr>
@@ -84,7 +80,9 @@
         </td>
         </tr>
         <tr>
-            <td class="auto-style4" colspan="2">&nbsp;</td>
+            <td class="auto-style4" colspan="2">
+            <asp:Label ID="lblOutput" runat="server" ForeColor="Red" Font-Names="Elephant" CssClass="auto-style12"></asp:Label>
+            </td>
         </tr>
         <tr>
             <td class="auto-style2" colspan="2">
@@ -92,7 +90,7 @@
             </td>
         </tr>
         <tr>
-            <td class="auto-style2" colspan="2">&nbsp;</td>
+            <td colspan="2">&nbsp;</td>
         </tr>
     </table>
             </td>

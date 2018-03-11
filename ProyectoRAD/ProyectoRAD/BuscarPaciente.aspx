@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MenuMaster.master" AutoEventWireup="true" CodeFile="BuscarPaciente.aspx.cs" Inherits="BuscarPaciente" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PrincipalMaster.master" AutoEventWireup="true" CodeFile="BuscarPaciente.aspx.cs" Inherits="BuscarPaciente" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style type="text/css">
@@ -25,6 +25,10 @@
         .auto-style7 {
             width: 284px;
         }
+        .auto-style8 {
+            width: 284px;
+            text-align: center;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
@@ -42,26 +46,31 @@
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td class="auto-style7">
-                            <asp:Label ID="Label2" runat="server" CssClass="auto-style6" ForeColor="White" Text="Cedula"></asp:Label>
+                        <td class="auto-style8">
+                            <asp:Label ID="Label2" runat="server" CssClass="auto-style6" ForeColor="White" Text="Cédula"></asp:Label>
                         </td>
                         <td class="auto-style4">
-                            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtCedula" runat="server"></asp:TextBox>
                         </td>
                     </tr>
                     <tr>
                         <td class="auto-style4" colspan="2">
-                            <asp:Button ID="ingresar" runat="server" Text="Ingresar" />
+                            <asp:Button ID="btnIngresar" runat="server" Text="Ingresar" OnClick="btnIngresar_Click"/>
                         </td>
                     </tr>
                     <tr>
                         <td class="auto-style4" colspan="2">
-                            <asp:Label ID="Label3" runat="server" ForeColor="Red"></asp:Label>
+                            <asp:Button ID="btnCrear" runat="server" OnClick="btnCrear_Click" Text="Crear paciente" Width="136px" />
                         </td>
                     </tr>
                     <tr>
                         <td class="auto-style4" colspan="2">
-                            <asp:Button ID="Button1" runat="server" Text="Atras" />
+                            <asp:Label ID="lblOutput" runat="server" ForeColor="Red"></asp:Label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style4" colspan="2">
+                            <asp:Button ID="btnAtras" runat="server" Text="Atrás" />
                         </td>
                     </tr>
                 </table>
