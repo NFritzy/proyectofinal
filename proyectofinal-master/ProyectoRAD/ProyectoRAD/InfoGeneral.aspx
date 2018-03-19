@@ -33,6 +33,9 @@
             font-size: x-large;
             font-family: Elephant;
         }
+        .auto-style7 {
+            color: #FF0000;
+        }
         </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
@@ -50,7 +53,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" Height="43px" Width="261px">
+                                        <asp:DropDownList ID="ddlGeneral" runat="server" AutoPostBack="True" Height="43px" Width="261px" OnSelectedIndexChanged="ddlGeneral_SelectedIndexChanged">
                                             <asp:ListItem Value="0">Seleccione un opcion</asp:ListItem>
                                             <asp:ListItem Value="1">Actividades próximas</asp:ListItem>
                                             <asp:ListItem Value="2">Galería</asp:ListItem>
@@ -73,8 +76,9 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>&nbsp;</td>
-                                    <td class="auto-style5">&nbsp;</td>
+                                    <td colspan="2">
+                                        <asp:Label ID="lblOutput" runat="server" CssClass="auto-style7"></asp:Label>
+                                    </td>
                                 </tr>
                             </table>
                         </td>

@@ -18,6 +18,11 @@
             font-size: x-large;
             color: #FFFFFF;
         }
+        .auto-style5 {
+            font-size: large;
+            font-family: "Felix Titling";
+            color: #FFFFFF;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
@@ -31,10 +36,27 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>&nbsp;</td>
+                        <td>
+                            <asp:Label ID="Label2" runat="server" CssClass="auto-style5" Text="Participaciones"></asp:Label>
+                        </td>
                     </tr>
                     <tr>
-                        <td>&nbsp;</td>
+                        <td>
+                            <asp:Image ID="Image1" runat="server" BorderColor="#003366" BorderWidth="3px" Height="190px" ImageUrl="~/FotosGaleria/diaNiño.jpg" Width="236px" />
+                            <asp:Image ID="Image2" runat="server" BorderColor="#FF0066" BorderWidth="3px" Height="185px" ImageUrl="~/FotosGaleria/child.jpg" Width="208px" />
+                            <asp:Image ID="Image3" runat="server" BorderColor="#FF3300" BorderWidth="3px" Height="177px" ImageUrl="~/FotosGaleria/MAYOR.jpg" Width="277px" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:Label ID="Label3" runat="server" CssClass="auto-style5" Text="Campañas"></asp:Label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:Image ID="Image4" runat="server" BorderColor="#FFCC00" BorderWidth="3px" Height="189px" ImageUrl="~/FotosGaleria/SaludBucal.jpg" Width="254px" />
+                            <asp:Image ID="Image5" runat="server" BorderColor="#339933" BorderWidth="3px" Height="185px" ImageUrl="~/FotosGaleria/Presion.jpg" Width="227px" />
+                        </td>
                     </tr>
                     <tr>
                         <td>

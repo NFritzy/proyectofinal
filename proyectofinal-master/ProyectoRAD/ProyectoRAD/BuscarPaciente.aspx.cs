@@ -30,6 +30,7 @@ public partial class BuscarPaciente : System.Web.UI.Page
                 if(cedula == ListaPaciente.listaPaciente.ElementAt(i).Cedula.ToString())
                 {
                     Session["cedulaP"] = ListaPaciente.listaPaciente.ElementAt(i).Cedula;
+                    Session["nombreP"] = ListaPaciente.listaPaciente.ElementAt(i).Nombre;
                     Response.Redirect("PacienteMenu.aspx");
                 }
             }

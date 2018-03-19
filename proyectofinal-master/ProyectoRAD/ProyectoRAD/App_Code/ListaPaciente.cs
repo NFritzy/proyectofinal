@@ -7,4 +7,5 @@ using System.Web;
 public static class ListaPaciente
 {
     public static List<Paciente> listaPaciente = new List<Paciente>();
+
 }

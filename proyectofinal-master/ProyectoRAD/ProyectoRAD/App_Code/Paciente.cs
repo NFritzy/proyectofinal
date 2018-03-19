@@ -12,9 +12,14 @@ public class Paciente
     private string direccion;
     private string correo;
     private List<string> funcionarios; // Lista de los nombres de usuario de los funcionarios
-    public List<Cita> citas;
+    private List<string> enfermedades;
+    private List<Cita> citas;
+    private List<Tratamiento> tratamiento;
+    private List<Operacion> operaciones;
+    private List<string> padecimientos;
 
- 
+
+
 
     public Paciente(string nombre, string apellido, int cedula, string tel, string direccion, string correo)
     {
@@ -24,6 +29,8 @@ public class Paciente
         this.tel = tel;
         this.direccion = direccion;
         this.correo = correo;
+       
+
     }
 
     public string Nombre { get => nombre; set => nombre = value; }
@@ -34,4 +41,9 @@ public class Paciente
     public string Correo { get => correo; set => correo = value; }
     public List<string> Funcionarios { get => funcionarios; set => funcionarios = value; }
     public List<Cita> Citas { get => citas; set => citas = value; }
+    public List<string> Enfermedades { get => enfermedades; set => enfermedades = value; }
+    public List<Tratamiento> Tratamiento { get => tratamiento; set => tratamiento = value; }
+    public List<Operacion> Operaciones { get => operaciones; set => operaciones = value; }
+    public List<string> Padecimientos { get => padecimientos; set => padecimientos = value; }
 }
+   

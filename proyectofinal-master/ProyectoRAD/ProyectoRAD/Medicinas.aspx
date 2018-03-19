@@ -24,6 +24,10 @@
             font-family: Elephant;
             color: #33CCCC;
         }
+        .auto-style8 {
+            color: #FFFFFF;
+            font-size: large;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
@@ -38,42 +42,32 @@
                     </tr>
                     <tr>
                         <td class="auto-style5">
-                            &nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style5">
-                            <asp:Label ID="Label2" runat="server" CssClass="auto-style7" Text="Tratamientos Actuales"></asp:Label>
+                            <asp:Label ID="lblOutput" runat="server" CssClass="auto-style8"></asp:Label>
                         </td>
                     </tr>
                     <tr>
                         <td class="auto-style5">
-                            <asp:ListBox ID="lstActuales" runat="server" Height="137px" Width="438px"></asp:ListBox>
+                            <asp:Label ID="Label2" runat="server" CssClass="auto-style7" Text="Tratamientos"></asp:Label>
                         </td>
                     </tr>
                     <tr>
                         <td class="auto-style5">
-                            <asp:Label ID="Label3" runat="server" CssClass="auto-style7" Text="Tratamientos Finalizados"></asp:Label>
+                            <asp:ListBox ID="lstTratamientos" runat="server" Height="216px" Width="459px"></asp:ListBox>
                         </td>
                     </tr>
                     <tr>
                         <td class="auto-style5">
-                            <asp:ListBox ID="lstFinalizados" runat="server" Height="142px" Width="437px"></asp:ListBox>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style5">
-                            <asp:Label ID="Label4" runat="server" CssClass="auto-style7" Text="Alergias a Medicamentos"></asp:Label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style5">
-                            <asp:ListBox ID="lstMedicamentos" runat="server" Height="145px" Width="437px"></asp:ListBox>
+                            <asp:Button ID="btnAgregar" runat="server" OnClick="btnAgregar_Click" Text="Agregar" />
                         </td>
                     </tr>
                     <tr>
                         <td class="auto-style5">
                             <asp:Button ID="Button1" runat="server" Text="Atras" />
                         </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style5">
+                            &nbsp;</td>
                     </tr>
                 </table>
             </td>

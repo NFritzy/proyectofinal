@@ -27,10 +27,7 @@
             color: #FFFFFF;
             font-size: large;
         }
-        .auto-style7 {
-            color: #66FF33;
-        }
-    </style>
+        </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <table class="auto-style2">
@@ -43,7 +40,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="auto-style6">***<span class="auto-style7">Hacer pantalla para agregar actividades</span>***</td>
+                        <td class="auto-style6">&nbsp;</td>
                     </tr>
                     <tr>
                         <td>

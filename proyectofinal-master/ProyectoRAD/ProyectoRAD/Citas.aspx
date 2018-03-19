@@ -58,17 +58,7 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <asp:Label ID="Label2" runat="server" CssClass="auto-style6" Text="Proximas citas"></asp:Label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <asp:ListBox ID="lstProximas" runat="server" Height="185px" Width="588px"></asp:ListBox>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <asp:Button ID="btnAtras" runat="server" Text="Atras" />
+                            <asp:Button ID="btnAtras" runat="server" Text="Atras" OnClick="btnAtras_Click" />
                         </td>
                     </tr>
                 </table>

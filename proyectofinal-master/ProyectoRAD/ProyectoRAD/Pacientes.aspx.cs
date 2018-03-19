@@ -13,9 +13,9 @@ public partial class Pacientes : System.Web.UI.Page
 
     }
 
-    public string revisaInfo(string nombre, string apellido, string cedula, string tel, string direccion, string correo)
+    public string revisaInfo(string nombre, string apellido, string cedula, string tel, string direccion, string correo, string enfermedades)
     {
-        if (nombre == "" || apellido == "" || cedula == "" || tel == "" || direccion == "" || correo == "")
+        if (nombre == "" || apellido == "" || cedula == "" || tel == "" || direccion == "" || correo == "" || enfermedades == "")
         {
             return "Debe llenar todos los campos";
         }
@@ -44,13 +44,18 @@ public partial class Pacientes : System.Web.UI.Page
             return "El correo debe cumplir con el formato de usuario@dominio.extension";
         }
         else {
-            ListaPaciente.listaPaciente.Add(new Paciente (txtNombre.Text, txtApellido.Text, int.Parse(txtCedula.Text), txtTel.Text, txtDireccion.Text, txtCorreo.Text));
+            Paciente paciente = new Paciente(txtNombre.Text, txtApellido.Text, int.Parse(txtCedula.Text), txtTel.Text, txtDireccion.Text, txtCorreo.Text);
+            
+            List<String> listaEnf =  txtEnfermedades.Text.Split(',').ToList();// Separa elementos por comas para agregarlos en la lista enfermedadesHer 
+            paciente.Enfermedades = listaEnf;
+            ListaPaciente.listaPaciente.Add(paciente));
             Response.Redirect("PacienteMenu.aspx");
+            
         }
-
         return "";
 
     }
+
 
     protected void btnVolver_Click(object sender, EventArgs e)
     {
@@ -60,7 +65,12 @@ public partial class Pacientes : System.Web.UI.Page
 
     protected void btnCrear_Click(object sender, EventArgs e)
     {
-        lblOutput.Text = revisaInfo(txtNombre.Text, txtApellido.Text, txtCedula.Text, txtTel.Text, txtDireccion.Text, txtCorreo.Text);
+        lblOutput.Text = revisaInfo(txtNombre.Text, txtApellido.Text, txtCedula.Text, txtTel.Text, txtDireccion.Text, txtCorreo.Text, txtEnfermedades.Text);
 
+    }
+
+    protected void btnTratamientos_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("AgregarMed.aspx");
     }
 }

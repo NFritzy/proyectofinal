@@ -45,7 +45,11 @@
             font-size: medium;
             color: #FFFFFF;
         }
-    </style>
+    .auto-style15 {
+        text-align: center;
+        height: 36px;
+    }
+        </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <table align="center" class="auto-style5">
@@ -56,6 +60,10 @@
                         <td class="auto-style7" colspan="2">
                             <asp:Label ID="Label1" runat="server" CssClass="auto-style8" Text="Pacientes"></asp:Label>
                         </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style7" colspan="2">
+                            &nbsp;</td>
                     </tr>
                     <tr>
                         <td class="auto-style10">
@@ -103,6 +111,22 @@
                         <td>
                             <asp:TextBox ID="txtCorreo" runat="server"></asp:TextBox>
                         </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style10">
+                            <asp:Label ID="Label7" runat="server" CssClass="auto-style9" Text="Enfermedades Hereditarias"></asp:Label>
+                        </td>
+                        <td>
+                            <asp:TextBox ID="txtEnfermedades" runat="server" TextMode="MultiLine"></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style15" colspan="2">
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style15" colspan="2">
+                            &nbsp;</td>
                     </tr>
                     <tr>
                         <td class="auto-style7" colspan="2">

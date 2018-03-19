@@ -22,6 +22,13 @@
             font-family: "Felix Titling";
             font-size: x-large;
         }
+        .auto-style6 {
+            color: #FFFFFF;
+            font-size: large;
+        }
+        .auto-style7 {
+            height: 27px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
@@ -32,6 +39,15 @@
                     <tr>
                         <td colspan="2">
                             <asp:Label ID="lblPadecimientos" runat="server" CssClass="auto-style5" Text="Padecimientos que tiene el paciente"></asp:Label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <asp:Label ID="lblOutput" runat="server" CssClass="auto-style6"></asp:Label>
                         </td>
                     </tr>
                     <tr>
@@ -46,6 +62,11 @@
                     <tr>
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style7" colspan="2">
+                            <asp:Button ID="btnAgregar" runat="server" OnClick="btnAgregar_Click" Text="Agregar" />
+                        </td>
                     </tr>
                 </table>
             </td>

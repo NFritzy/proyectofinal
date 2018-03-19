@@ -44,34 +44,12 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style6"><strong>
-                            <asp:Label ID="Label2" runat="server" CssClass="auto-style5" Text="Padres"></asp:Label>
-                            </strong></td>
-                        <td rowspan="2">
-                            <asp:ListBox ID="lstPadres" runat="server" Height="125px" Width="336px"></asp:ListBox>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                    </tr>
-                    <tr>
                         <td class="auto-style6">
                             <asp:Label ID="Label3" runat="server" CssClass="auto-style7" Text="Enfermedades hereditarias"></asp:Label>
                         </td>
-                        <td rowspan="2">
+                        <td>
                             <asp:ListBox ID="lstHerencia" runat="server" Height="125px" Width="336px"></asp:ListBox>
                         </td>
-                    </tr>
-                    <tr>
-                        <td>&nbsp;</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
@@ -79,7 +57,7 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <asp:Button ID="btnAtrás" runat="server" Text="Atrás" />
+                            <asp:Button ID="btnAtrás" runat="server" Text="Atrás" OnClick="btnAtrás_Click" />
                         </td>
                     </tr>
                 </table>

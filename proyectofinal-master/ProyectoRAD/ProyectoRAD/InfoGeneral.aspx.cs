@@ -12,13 +12,31 @@ public partial class InfoGeneral : System.Web.UI.Page
 
     }
 
-    protected void btnVolver_Click(object sender, EventArgs e)
-    {
-        Response.Redirect("Menu.aspx");
+
+    private string validaGen() {
+        if (ddlGeneral.SelectedValue == "1") {
+
+            Response.Redirect("Actividades.aspx");
+
+        }else if (ddlGeneral.SelectedValue == "2")
+        {
+            Response.Redirect("Galeria.aspx");
+        }
+        else if (ddlGeneral.SelectedValue == "3")
+        {
+            Response.Redirect("Fundadores.aspx");
+        }
+        return "";
+
     }
 
     protected void bntAtrás_Click(object sender, EventArgs e)
     {
         Response.Redirect("PacienteMenu.aspx");
+    }
+
+    protected void ddlGeneral_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        lblOutput.Text = validaGen();
     }
 }

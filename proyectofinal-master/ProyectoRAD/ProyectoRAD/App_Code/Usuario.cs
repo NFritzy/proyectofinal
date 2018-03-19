@@ -12,15 +12,7 @@ public class Usuario
     private string contra;
     private string nombreCompleto;
 
-    public Usuario()
-    {
-    }
-
-    public Usuario(string usuario, string contra)
-    {
-        this.usuario = usuario;
-        this.contra = contra;
-    }
+    
 
     public Usuario(string usuario, string contra, string nombreCompleto)
     {

@@ -32,4 +32,9 @@ public partial class Cita : System.Web.UI.Page
     {
         
     }
+
+    protected void btnAtras_Click(object sender, EventArgs e)
+    {
+
+    }
 }
