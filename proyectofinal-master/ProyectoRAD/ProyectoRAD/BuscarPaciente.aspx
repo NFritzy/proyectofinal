@@ -70,7 +70,7 @@
                     </tr>
                     <tr>
                         <td class="auto-style4" colspan="2">
-                            <asp:Button ID="btnAtras" runat="server" Text="Atrás" />
+                            <asp:Button ID="btnAtras" runat="server" Text="Atrás" OnClick="btnAtras_Click" />
                         </td>
                     </tr>
                 </table>

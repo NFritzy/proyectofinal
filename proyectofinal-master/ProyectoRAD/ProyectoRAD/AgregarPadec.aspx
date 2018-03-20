@@ -56,6 +56,11 @@
                     </tr>
                     <tr>
                         <td colspan="2">
+                            <asp:Button ID="btnAtrás" runat="server" OnClick="btnAtrás_Click" Text="Atrás" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
                             <asp:Label ID="lblOutput" runat="server" CssClass="auto-style7"></asp:Label>
                         </td>
                     </tr>

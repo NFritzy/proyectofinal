@@ -29,4 +29,9 @@ public partial class Contactos : System.Web.UI.Page
     {
         Response.Redirect("AgregarContactos.aspx");
     }
+
+    protected void btnAtrás_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("Menu.aspx");
+    }
 }

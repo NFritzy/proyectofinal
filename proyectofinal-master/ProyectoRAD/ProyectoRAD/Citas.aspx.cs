@@ -39,4 +39,9 @@ public partial class Cita : System.Web.UI.Page
     {
         Response.Redirect("PacienteMenu.aspx");
     }
+
+    protected void btnCrear_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("CrearCita.aspx");
+    }
 }

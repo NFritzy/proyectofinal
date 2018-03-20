@@ -47,7 +47,7 @@
                     </tr>
                     <tr>
                         <td class="auto-style5">
-                            <asp:DropDownList ID="ddlCerrar" runat="server" Height="72px" Width="244px">
+                            <asp:DropDownList ID="ddlCerrar" runat="server" Height="72px" Width="244px" AutoPostBack="True">
                                 <asp:ListItem Value="0">Seleccione una opción</asp:ListItem>
                                 <asp:ListItem Value="1">Si</asp:ListItem>
                                 <asp:ListItem Value="2">No</asp:ListItem>

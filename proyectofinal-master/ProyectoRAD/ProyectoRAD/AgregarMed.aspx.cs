@@ -58,5 +58,10 @@ public partial class Default2 : System.Web.UI.Page
         lblOutput.Text = agregarMed(txtNombre.Text, txtDate.Text, ddlAlergia.SelectedValue);
     }
 
-   
+
+
+    protected void btnAtrás_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("Medicinas.aspx");
+    }
 }

@@ -34,4 +34,9 @@ public partial class Padecimientos : System.Web.UI.Page
     {
         Response.Redirect("AgregarPadec.aspx");
     }
+
+    protected void btnAtrás_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("PacienteMenu.aspx");
+    }
 }

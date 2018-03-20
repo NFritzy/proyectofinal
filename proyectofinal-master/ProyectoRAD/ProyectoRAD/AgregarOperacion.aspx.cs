@@ -55,4 +55,9 @@ public partial class AgregarOperacion : System.Web.UI.Page
     {
         lblOutput.Text = agregarOp(txtName.Text, txtTipo.Text, txtDate.Text);
     }
+
+    protected void btnAtrás_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("Operaciones.aspx");
+    }
 }

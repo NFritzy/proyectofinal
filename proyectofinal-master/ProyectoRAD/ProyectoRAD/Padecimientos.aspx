@@ -64,9 +64,22 @@
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td class="auto-style7" colspan="2">
+                        <td colspan="2">
                             <asp:Button ID="btnAgregar" runat="server" OnClick="btnAgregar_Click" Text="Agregar" />
                         </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style7" colspan="2">
+                            <asp:Button ID="btnAtrás" runat="server" OnClick="btnAtrás_Click" Text="Atrás" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style7" colspan="2">
+                            &nbsp;</td>
                     </tr>
                 </table>
             </td>

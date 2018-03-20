@@ -61,4 +61,9 @@ public partial class AgregarContactos : System.Web.UI.Page
     {
         lblOutput.Text = agregarCont(txtNombre.Text, txtTel.Text, txtExt.Text);
     }
+
+    protected void btnAtrás_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("Contactos.aspx");
+    }
 }

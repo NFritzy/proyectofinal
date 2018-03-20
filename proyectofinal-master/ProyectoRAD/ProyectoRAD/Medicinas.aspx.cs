@@ -32,4 +32,9 @@ public partial class Medicinas : System.Web.UI.Page
     {
         Response.Redirect("AgregarMed.aspx");
     }
+
+    protected void btnAtras_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("PacienteMenu.aspx");
+    }
 }

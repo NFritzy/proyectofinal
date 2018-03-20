@@ -53,8 +53,16 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
+                        <td colspan="2">
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <asp:Button ID="btnCrear" runat="server" OnClick="btnCrear_Click" Text="Crear" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">&nbsp;</td>
                     </tr>
                     <tr>
                         <td colspan="2">

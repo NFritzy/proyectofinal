@@ -29,6 +29,13 @@
         .auto-style7 {
             width: 263px;
         }
+        .auto-style8 {
+            width: 263px;
+            height: 25px;
+        }
+        .auto-style9 {
+            height: 25px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
@@ -46,10 +53,10 @@
                         <td colspan="2">&nbsp;</td>
                     </tr>
                     <tr>
-                        <td class="auto-style7">
+                        <td class="auto-style8">
                             <asp:Label ID="Label2" runat="server" CssClass="auto-style6" Text="¿Es asegurado?"></asp:Label>
                         </td>
-                        <td>
+                        <td class="auto-style9">
                             <asp:Label ID="lblOutput2" runat="server" CssClass="auto-style5"></asp:Label>
                         </td>
                     </tr>

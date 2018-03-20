@@ -48,4 +48,9 @@ public partial class BuscarPaciente : System.Web.UI.Page
     {
         Response.Redirect("Pacientes.aspx");
     }
+
+    protected void btnAtras_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("Menu.aspx");
+    }
 }

@@ -55,7 +55,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <asp:Button ID="btnAtrás" runat="server" Text="Atrás" />
+                            <asp:Button ID="btnAtrás" runat="server" Text="Atrás" OnClick="btnAtrás_Click" />
                         </td>
                     </tr>
                 </table>

@@ -18,6 +18,7 @@ public partial class PacienteMenu : System.Web.UI.Page
     {
         if (ddlMenu.SelectedValue == "1") {
             Response.Redirect ("Citas.aspx");
+
         }else if (ddlMenu.SelectedValue == "2")
         {
             Response.Redirect("DatosFamiliares.aspx");

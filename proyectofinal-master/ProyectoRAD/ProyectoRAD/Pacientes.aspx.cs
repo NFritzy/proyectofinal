@@ -65,14 +65,7 @@ public partial class Pacientes : System.Web.UI.Page
         return "";
 
     }
-
-
-    protected void btnVolver_Click(object sender, EventArgs e)
-    {
-        Response.Redirect("Menu.aspx");
-    }
-
-
+    
     protected void btnCrear_Click(object sender, EventArgs e)
     {
         lblOutput.Text = revisaInfo(txtNombre.Text, txtApellido.Text, txtCedula.Text, txtTel.Text, txtDireccion.Text, txtCorreo.Text, txtEnfermedades.Text, ddlSeguro.SelectedValue);
@@ -82,5 +75,10 @@ public partial class Pacientes : System.Web.UI.Page
     protected void btnTratamientos_Click(object sender, EventArgs e)
     {
         Response.Redirect("AgregarMed.aspx");
+    }
+
+    protected void atras_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("BuscarPaciente.aspx");
     }
 }

@@ -94,6 +94,11 @@
                     </tr>
                     <tr>
                         <td class="auto-style7" colspan="2">
+                            <asp:Button ID="btnAtrás" runat="server" OnClick="btnAtrás_Click" Text="Atrás" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style7" colspan="2">
                             <asp:Label ID="lblOutput" runat="server" CssClass="auto-style12"></asp:Label>
                         </td>
                     </tr>

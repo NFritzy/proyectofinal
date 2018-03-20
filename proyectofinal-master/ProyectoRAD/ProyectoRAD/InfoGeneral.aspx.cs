@@ -22,10 +22,7 @@ public partial class InfoGeneral : System.Web.UI.Page
         {
             Response.Redirect("Galeria.aspx");
         }
-        else if (ddlGeneral.SelectedValue == "3")
-        {
-            Response.Redirect("Fundadores.aspx");
-        }
+       
         return "";
 
     }

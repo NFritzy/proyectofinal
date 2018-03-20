@@ -57,7 +57,6 @@
                                             <asp:ListItem Value="0">Seleccione un opcion</asp:ListItem>
                                             <asp:ListItem Value="1">Actividades próximas</asp:ListItem>
                                             <asp:ListItem Value="2">Galería</asp:ListItem>
-                                            <asp:ListItem Value="3">Fundadores</asp:ListItem>
                                         </asp:DropDownList>
                                     </td>
                                     <td class="auto-style5">&nbsp;</td>

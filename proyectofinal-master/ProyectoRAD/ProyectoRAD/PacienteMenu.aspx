@@ -21,9 +21,6 @@
         .auto-style5 {
             text-align: center;
         }
-        .auto-style6 {
-            text-align: left;
-        }
         .auto-style7 {
             text-align: center;
             height: 37px;
@@ -44,7 +41,7 @@
                         <td class="auto-style5">&nbsp;</td>
                     </tr>
                     <tr>
-                        <td class="auto-style6">
+                        <td class="auto-style5">
                             <asp:DropDownList ID="ddlMenu" runat="server" OnSelectedIndexChanged="ddlMenu_SelectedIndexChanged" AutoPostBack="True">
                                 <asp:ListItem Value="0">Seleccione una opcion</asp:ListItem>
                                 <asp:ListItem Value="1">Citas</asp:ListItem>

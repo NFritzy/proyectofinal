@@ -49,4 +49,9 @@ public partial class AgregarPadec : System.Web.UI.Page
     {
         lblOutput.Text = agregarMed(txtPadec.Text);
     }
+
+    protected void btnAtrás_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("Padecimientos.aspx");
+    }
 }
