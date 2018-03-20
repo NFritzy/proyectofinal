@@ -73,6 +73,14 @@
                         </td>
                     </tr>
                     <tr>
+                        <td>
+                            <asp:Label ID="Label7" runat="server" CssClass="auto-style5" Text="Costo"></asp:Label>
+                        </td>
+                        <td>
+                            <asp:TextBox ID="txtCosto" runat="server"></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
                         <td colspan="2">
                             <asp:Button ID="btnCrear" runat="server" OnClick="btnCrear_Click" Text="Crear" Width="53px" />
                         </td>

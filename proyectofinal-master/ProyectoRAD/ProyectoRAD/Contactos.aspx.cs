@@ -9,11 +9,24 @@ public partial class Contactos : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        muestraCont();
     }
 
+    public void muestraCont()
+    {
+        for (int i = 0; i < ListaContacto.listaContactos.Count; i++)
+        {
+            lstTel.Items.Add(ListaContacto.listaContactos.ElementAt(i).ToString());
+
+        }
+    }
     protected void btnVolver_Click(object sender, EventArgs e)
     {
         Response.Redirect("Menu.aspx");
+    }
+
+    protected void btnAgregar_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("AgregarContactos.aspx");
     }
 }

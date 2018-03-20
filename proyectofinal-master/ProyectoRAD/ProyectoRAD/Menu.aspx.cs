@@ -36,7 +36,7 @@ public partial class Menu : System.Web.UI.Page
         }
         else if(ddlMenu.SelectedValue == "6")
         {
-            Environment.Exit(0);
+            Response.Redirect("CerrarSesion.aspx");
         }
     }
 }

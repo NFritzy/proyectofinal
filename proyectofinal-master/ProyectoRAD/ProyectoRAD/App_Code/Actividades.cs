@@ -19,4 +19,9 @@ public class Actividades
 
     public string Nombre { get => nombre; set => nombre = value; }
     public string Fecha { get => fecha; set => fecha = value; }
+
+    public override string ToString()
+    {
+        return "Actividad: " + nombre + " " + "Fecha: " + fecha;
+    }
 }

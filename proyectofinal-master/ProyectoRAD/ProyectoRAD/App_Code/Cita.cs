@@ -13,23 +13,27 @@ public class Cita
     private string tipo;
     private string estado;
     private string funcionario;
+    private int costo;
 
-    public Cita(string hora, string fecha, string tipo, string funcionario)
+    public Cita(string hora, string fecha, string tipo, string funcionario, int costo)
     {
         this.hora = hora;
         this.fecha = fecha;
         this.tipo = tipo;
         this.funcionario = funcionario;
+        this.costo = costo;
     }
+
 
     public string Hora { get => hora; set => hora = value; }
     public string Fecha { get => fecha; set => fecha = value; }
     public string Tipo { get => tipo; set => tipo = value; }
     public string Estado { get => estado; set => estado = value; }
     public string Funcionario { get => funcionario; set => funcionario = value; }
+    public int Costo { get => costo; set => costo = value; }
 
     public string ToString() {
 
-        return "Hora: " + hora + " - Fecha: " + fecha + " \\ Tipo: " + tipo + " - Estado:" + estado + " \\ Funcionario: " + funcionario;
+        return "Hora: " + hora + " - Fecha: " + fecha + " \\ Tipo: " + tipo + " - Estado:" + estado + " \\ Funcionario: " + funcionario + " \\ Costo: " + costo;
     }
 }

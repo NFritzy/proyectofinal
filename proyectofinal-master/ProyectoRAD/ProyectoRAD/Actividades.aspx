@@ -49,18 +49,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <asp:ListBox ID="lstActividades" runat="server" Height="139px" Width="333px"></asp:ListBox>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style5">Participaciones</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <asp:ListBox ID="lstParticipaciones" runat="server" Height="139px" Width="333px"></asp:ListBox>
+                            <asp:ListBox ID="lstActividades" runat="server" Height="168px" Width="386px"></asp:ListBox>
                         </td>
                     </tr>
                     <tr>

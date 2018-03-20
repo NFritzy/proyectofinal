@@ -13,9 +13,9 @@ public partial class Pacientes : System.Web.UI.Page
 
     }
 
-    public string revisaInfo(string nombre, string apellido, string cedula, string tel, string direccion, string correo, string enfermedades)
+    public string revisaInfo(string nombre, string apellido, string cedula, string tel, string direccion, string correo, string enfermedades, string asegurado)
     {
-        if (nombre == "" || apellido == "" || cedula == "" || tel == "" || direccion == "" || correo == "" || enfermedades == "")
+        if (nombre == "" || apellido == "" || cedula == "" || tel == "" || direccion == "" || correo == "" || enfermedades == "" || asegurado == "")
         {
             return "Debe llenar todos los campos";
         }
@@ -43,14 +43,24 @@ public partial class Pacientes : System.Web.UI.Page
         {
             return "El correo debe cumplir con el formato de usuario@dominio.extension";
         }
+        
         else {
-            Paciente paciente = new Paciente(txtNombre.Text, txtApellido.Text, int.Parse(txtCedula.Text), txtTel.Text, txtDireccion.Text, txtCorreo.Text);
-            
-            List<String> listaEnf =  txtEnfermedades.Text.Split(',').ToList();// Separa elementos por comas para agregarlos en la lista enfermedadesHer 
+
+            bool seguro= false;
+
+            if (asegurado == "1")
+            {
+                seguro = true;
+
+            }
+
+            Paciente paciente = new Paciente(txtNombre.Text, txtApellido.Text, int.Parse(txtCedula.Text), txtTel.Text, txtDireccion.Text, txtCorreo.Text, seguro);
+
+            List<String> listaEnf = txtEnfermedades.Text.Split(',').ToList();// Separa elementos por comas para agregarlos en la lista enfermedadesHer 
             paciente.Enfermedades = listaEnf;
-            ListaPaciente.listaPaciente.Add(paciente));
+            ListaPaciente.listaPaciente.Add(paciente);
             Response.Redirect("PacienteMenu.aspx");
-            
+
         }
         return "";
 
@@ -65,7 +75,7 @@ public partial class Pacientes : System.Web.UI.Page
 
     protected void btnCrear_Click(object sender, EventArgs e)
     {
-        lblOutput.Text = revisaInfo(txtNombre.Text, txtApellido.Text, txtCedula.Text, txtTel.Text, txtDireccion.Text, txtCorreo.Text, txtEnfermedades.Text);
+        lblOutput.Text = revisaInfo(txtNombre.Text, txtApellido.Text, txtCedula.Text, txtTel.Text, txtDireccion.Text, txtCorreo.Text, txtEnfermedades.Text, ddlSeguro.SelectedValue);
 
     }
 

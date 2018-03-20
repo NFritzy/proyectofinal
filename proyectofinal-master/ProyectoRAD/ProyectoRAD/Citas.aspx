@@ -49,7 +49,7 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <asp:ListBox ID="lstCitas" runat="server" Height="226px" OnSelectedIndexChanged="lstCitas_SelectedIndexChanged" Width="586px"></asp:ListBox>
+                            <asp:ListBox ID="lstCitas" runat="server" Height="226px"  Width="586px"></asp:ListBox>
                         </td>
                     </tr>
                     <tr>

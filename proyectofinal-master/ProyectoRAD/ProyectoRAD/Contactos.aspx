@@ -34,37 +34,36 @@
             <td>
                 <table align="center" class="auto-style3" style="background-image: url('Images/opacity.png')">
                     <tr>
-                        <td class="auto-style5" colspan="2">
+                        <td class="auto-style5">
                             <asp:Label ID="Label1" runat="server" CssClass="auto-style4" Text="Contactos"></asp:Label>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2" class="auto-style8"></td>
+                        <td class="auto-style8"></td>
                     </tr>
                     <tr>
                         <td class="auto-style5">
                             <asp:Label ID="Label2" runat="server" CssClass="auto-style6" Text="Telefonos"></asp:Label>
                         </td>
-                        <td class="auto-style5">
-                            <asp:Label ID="Label3" runat="server" CssClass="auto-style6" Text="Extenciones"></asp:Label>
-                        </td>
                     </tr>
                     <tr>
                         <td class="auto-style5">
-                            <asp:ListBox ID="lstTel" runat="server" Height="164px" Width="251px"></asp:ListBox>
-                        </td>
-                        <td>
-                            <asp:ListBox ID="lstExt" runat="server" Height="164px" Width="251px"></asp:ListBox>
+                            <asp:ListBox ID="lstTel" runat="server" Height="192px" Width="412px"></asp:ListBox>
                         </td>
                     </tr>
                     <tr>
-                        <td class="auto-style5" colspan="2">
-                            <asp:Label ID="lblOutput" runat="server" ForeColor="Red"></asp:Label>
+                        <td class="auto-style5">
+                            <asp:Button ID="btnAgregar" runat="server" OnClick="btnAgregar_Click" Text="Agregar" />
                         </td>
                     </tr>
                     <tr>
-                        <td class="auto-style5" colspan="2">
+                        <td class="auto-style5">
                             <asp:Button ID="btnAtrás" runat="server" Text="Atrás" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style5">
+                            <asp:Label ID="lblOutput" runat="server" ForeColor="Red"></asp:Label>
                         </td>
                     </tr>
                 </table>

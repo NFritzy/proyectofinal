@@ -13,8 +13,8 @@ public partial class CrearCita : System.Web.UI.Page
 
     }
 
-    public string validaCita(string fecha, string hora, string tipo, string funcionario ) {
-        if (fecha == "" || hora == "" || tipo == "" || funcionario == "")
+    public string validaCita(string fecha, string hora, string tipo, string funcionario, string costo ) {
+        if (fecha == "" || hora == "" || tipo == "" || funcionario == "" ||costo== "")
         {
             return "Debe llenar todos los especios";
         }
@@ -23,7 +23,7 @@ public partial class CrearCita : System.Web.UI.Page
             {
                 if (ListaPaciente.listaPaciente.ElementAt(i).Cedula.ToString() == Session["cedulaP"].ToString())
                 {
-                    ListaPaciente.listaPaciente.ElementAt(i).Citas.Add(new Cita(hora, fecha, tipo, funcionario));
+                    ListaPaciente.listaPaciente.ElementAt(i).Citas.Add(new Cita(hora, fecha, tipo, funcionario, int.Parse(costo)));
                     return "La cita se ha creado";
                 }
             }
@@ -33,7 +33,7 @@ public partial class CrearCita : System.Web.UI.Page
     }
     protected void btnCrear_Click(object sender, EventArgs e)
     {
-        lblOutput.Text = validaCita(txtFecha.Text, txtHora.Text, txtTipo.Text, txtFuncionario.Text);
+        lblOutput.Text = validaCita(txtFecha.Text, txtHora.Text, txtTipo.Text, txtFuncionario.Text, txtCosto.Text);
     }
 
 

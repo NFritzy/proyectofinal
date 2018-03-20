@@ -44,7 +44,8 @@
                         <td>
                             <asp:Image ID="Image1" runat="server" BorderColor="#003366" BorderWidth="3px" Height="190px" ImageUrl="~/FotosGaleria/diaNiño.jpg" Width="236px" />
                             <asp:Image ID="Image2" runat="server" BorderColor="#FF0066" BorderWidth="3px" Height="185px" ImageUrl="~/FotosGaleria/child.jpg" Width="208px" />
-                            <asp:Image ID="Image3" runat="server" BorderColor="#FF3300" BorderWidth="3px" Height="177px" ImageUrl="~/FotosGaleria/MAYOR.jpg" Width="277px" />
+                            <asp:Image ID="Image3" runat="server" BorderColor="#FF3300" BorderWidth="3px" Height="145px" ImageUrl="~/FotosGaleria/MAYOR.jpg" Width="204px" />
+                            <asp:Image ID="Image6" runat="server" BorderColor="#00FFCC" BorderWidth="3px" Height="146px" ImageUrl="~/FotosGaleria/father.jpg" Width="218px" />
                         </td>
                     </tr>
                     <tr>

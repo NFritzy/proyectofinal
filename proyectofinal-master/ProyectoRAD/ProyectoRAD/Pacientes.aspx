@@ -114,6 +114,18 @@
                     </tr>
                     <tr>
                         <td class="auto-style10">
+                            <asp:Label ID="Label8" runat="server" CssClass="auto-style9" Text="Seguro"></asp:Label>
+                        </td>
+                        <td>
+                            <asp:DropDownList ID="ddlSeguro" runat="server" AutoPostBack="True" Height="16px" Width="163px">
+                                <asp:ListItem Value="0">Seleccione una opción</asp:ListItem>
+                                <asp:ListItem Value="1">Si</asp:ListItem>
+                                <asp:ListItem Value="2">No</asp:ListItem>
+                            </asp:DropDownList>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style10">
                             <asp:Label ID="Label7" runat="server" CssClass="auto-style9" Text="Enfermedades Hereditarias"></asp:Label>
                         </td>
                         <td>
