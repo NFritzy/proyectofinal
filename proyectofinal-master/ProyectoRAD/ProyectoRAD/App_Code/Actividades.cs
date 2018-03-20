@@ -8,14 +8,17 @@ using System.Web;
 /// </summary>
 public class Actividades
 {
-    private string nombre;
-    private string fecha;
 
+    private string nombre; // Campo de objeto actividades que almacena su nombre
+    private string fecha; // Campo de objeto actividades que almacena su fecha
+
+    // constructor
     public Actividades(string nombre, string fecha)
     {
         this.nombre = nombre;
         this.fecha = fecha;
     }
+
 
     public string Nombre { get => nombre; set => nombre = value; }
     public string Fecha { get => fecha; set => fecha = value; }

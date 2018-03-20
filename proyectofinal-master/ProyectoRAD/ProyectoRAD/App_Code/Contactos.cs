@@ -10,21 +10,21 @@ public class Contactos
 {
     private string nombre;
     private int telefono;
-    private int extension;
+    
 
-    public Contactos(string nombre, int telefono, int extension)
+    public Contactos(string nombre, int telefono)
     {
         this.nombre = nombre;
         this.telefono = telefono;
-        this.extension = extension;
     }
+
+    public virtual string contact()
+    {
+       return "Nombre: " + nombre + " " + "Telefono: " + telefono;
+    }
+
 
     public string Nombre { get => nombre; set => nombre = value; }
     public int Telefono { get => telefono; set => telefono = value; }
-    public int Extension { get => extension; set => extension = value; }
-
-    public override string ToString()
-    {
-        return "Nombre: " + nombre + " " + "Telefono: " + telefono + " " + "Extension: " + extension;
-    }
+   
 }

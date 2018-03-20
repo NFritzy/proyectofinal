@@ -55,11 +55,10 @@
                     </tr>
                     <tr>
                         <td class="auto-style7">
-                            <asp:Label ID="Label3" runat="server" CssClass="auto-style6" Text="Cuenta"></asp:Label>
+                            <asp:Label ID="Label3" runat="server" CssClass="auto-style6" Text="Total"></asp:Label>
                         </td>
                         <td>
-                            <asp:DropDownList ID="ddlCuenta" runat="server">
-                            </asp:DropDownList>
+                            <asp:Label ID="lblOutput3" runat="server" CssClass="auto-style5"></asp:Label>
                         </td>
                     </tr>
                     <tr>

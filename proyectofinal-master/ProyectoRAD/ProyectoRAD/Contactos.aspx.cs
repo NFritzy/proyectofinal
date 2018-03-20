@@ -16,7 +16,7 @@ public partial class Contactos : System.Web.UI.Page
     {
         for (int i = 0; i < ListaContacto.listaContactos.Count; i++)
         {
-            lstTel.Items.Add(ListaContacto.listaContactos.ElementAt(i).ToString());
+            lstTel.Items.Add(ListaContacto.listaContactos.ElementAt(i).contact());
 
         }
     }

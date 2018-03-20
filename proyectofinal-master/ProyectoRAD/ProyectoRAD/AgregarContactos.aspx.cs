@@ -16,10 +16,10 @@ public partial class AgregarContactos : System.Web.UI.Page
     {
 
 
-        if (nombre == ""|| telefono == "" || extension == "")
+        if (nombre == ""|| telefono == "" )
         {
 
-            return "Debes completar todos los espacios";
+            return "Debes completar el nombre y el telefono";
 
         }
         else if (!Regex.IsMatch(nombre, "^[a-z A-Z]+$"))
@@ -40,8 +40,16 @@ public partial class AgregarContactos : System.Web.UI.Page
 
         else
         {
-            Contactos contactos = new Contactos(nombre, int.Parse(telefono), int.Parse(extension));
-            ListaContacto.listaContactos.Add(contactos);
+            if (extension == "")
+            {
+                Contactos contactos = new Contactos(nombre, int.Parse(telefono));
+                ListaContacto.listaContactos.Add(contactos);
+            }
+            else {
+                Extensiones extensiones = new Extensiones(nombre, int.Parse(telefono), int.Parse(extension));
+                ListaContacto.listaContactos.Add(extensiones);
+            }
+            
 
         }
 
